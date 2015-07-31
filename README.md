@@ -12,6 +12,12 @@ Install the dependencies:
 $ bin/setup
 ```
 
+Also install ImageMagick if you need it, e.g.:
+
+```
+sudo apt-get install imagemagick
+```
+
 Then start the application:
 
 ```
