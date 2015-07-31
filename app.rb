@@ -32,6 +32,10 @@ get '/card' do
   send_file './punchcard.jpg', filename: 'punchcard.jpg', type: 'image/jpeg'
 end
 
+get '/cardpdf' do
+  send_file './punchcard.pdf', filename: 'punchcard.pdf', type: 'application/pdf'
+end
+
 get '/instructions' do
   erb :instructions
 end
