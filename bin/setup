@@ -1,0 +1,2 @@
+gem install bundler --conservative
+bundle check || bundle install

@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
+require 'bundler/setup' # Set up gems listed in the Gemfile.
+
+require 'mork'
+
+if ARGV.count < 1
+  STDERR.puts "Usage: #{$PROGRAM_NAME} output"
+  STDERR.puts "example: #{$PROGRAM_NAME} punchcard.pdf"
+  exit 0
+end
+
+output = ARGV[0]
+
+content = {
+  # the response sheet's unique identifier; it is printed
+  # in binary form as a barcode at the bottom of the sheet
+  barcode: 123456,
+  # number of items and number of choices per item
+  # in this case: 100 items with 5 choices each
+  choices: [4] * 10,
+  choice_symbols: ['←', '→', '↑', '↓'],
+  # stuff to print in the header
+  header: {
+    title: 'Punched Quest',
+  }
+}
+
+sheet = Mork::SheetPDF.new(content, 'layout.yml')
+sheet.save(output)
