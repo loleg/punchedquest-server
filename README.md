@@ -1,4 +1,4 @@
-# Punched Quest backend
+# PunchedQuest! backend
 
 Also check out the [frontend](https://github.com/loleg/punchedquest).
 

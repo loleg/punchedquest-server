@@ -14,7 +14,7 @@ def recognize_instructions(image)
   end
 end
 
-set :public_folder, Proc.new { File.join(root, "www") }
+set :public_folder, Proc.new { File.join(root, "punchedquest") }
 
 get '/' do
   redirect 'index.html'
