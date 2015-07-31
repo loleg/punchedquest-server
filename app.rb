@@ -14,7 +14,13 @@ def recognize_instructions(image)
   end
 end
 
+set :public_folder, Proc.new { File.join(root, "www") }
+
 get '/' do
+  redirect 'index.html'
+end
+
+get '/api' do
   redirect '/help'
 end
 
