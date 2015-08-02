@@ -22,7 +22,7 @@ content = {
   choice_symbols: ['←', '→', '↑', '↓', 'ó', '§'],
   # stuff to print in the header
   header: {
-    title: 'Punched Quest! >>> pq.soda.camp',
+    title: 'm.^_^,m >>> PunchedQuest.soda.camp >>> !!',
   }
 }
 
