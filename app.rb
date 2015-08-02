@@ -14,7 +14,13 @@ def recognize_instructions(image)
   end
 end
 
+set :public_folder, Proc.new { File.join(root, "punchedquest") }
+
 get '/' do
+  redirect 'index.html'
+end
+
+get '/api' do
   redirect '/help'
 end
 
@@ -24,6 +30,10 @@ end
 
 get '/card' do
   send_file './punchcard.jpg', filename: 'punchcard.jpg', type: 'image/jpeg'
+end
+
+get '/cardpdf' do
+  send_file './punchcard.pdf', filename: 'punchcard.pdf', type: 'application/pdf'
 end
 
 get '/instructions' do

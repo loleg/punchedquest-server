@@ -1,4 +1,4 @@
-# Punched Quest backend
+# PunchedQuest! backend
 
 Also check out the [frontend](https://github.com/loleg/punchedquest).
 
@@ -10,6 +10,12 @@ Install the dependencies:
 
 ```
 $ bin/setup
+```
+
+Also install ImageMagick if you need it, e.g.:
+
+```
+sudo apt-get install imagemagick
 ```
 
 Then start the application:

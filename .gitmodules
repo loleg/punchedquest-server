@@ -1,0 +1,3 @@
+[submodule "punchedquest"]
+	path = punchedquest
+	url = git@github.com:loleg/punchedquest.git

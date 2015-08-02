@@ -18,11 +18,11 @@ content = {
   barcode: 123456,
   # number of items and number of choices per item
   # in this case: 100 items with 5 choices each
-  choices: [4] * 10,
-  choice_symbols: ['←', '→', '↑', '↓'],
+  choices: [6] * 10,
+  choice_symbols: ['←', '→', '↑', '↓', 'ó', '§'],
   # stuff to print in the header
   header: {
-    title: 'Punched Quest',
+    title: 'Punched Quest! >>> pq.soda.camp',
   }
 }
 
